@@ -25,7 +25,7 @@ void sendDATA(short s[]){
 #endif
 	}
 	sprintf(postdata, "db=%.2f;db=%.2f;db=%.2f;db=%.2f;db=%.2f;db=%.2f;db=%.2f;db=%.2f", 
-	db[0],  db[1], db[2], db[3], db[4], db[5], db[6], db[7]);
+		db[0],  db[1], db[2], db[3], db[4], db[5], db[6], db[7]);
 
 	curl_global_init(CURL_GLOBAL_ALL);
         CURL *c = curl_easy_init();

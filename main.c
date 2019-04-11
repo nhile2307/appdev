@@ -32,6 +32,8 @@ int main(){
 
 		displayWAVHDR(hdr);
 		displayWAVDATA(sd);
+		
+		sendDATA(sd);
 	}
 	resetColors();
 //	getchar();
