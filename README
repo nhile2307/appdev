@@ -1,2 +1,27 @@
-# This is application development ver 1
-# modified by developer
+# This is application development ver 1.1 
+
+This application offers a possibility to turn a Raspberry Pi as a sound 
+device. The application comes with 2 functions: a sound collector and
+a test tone generator
+
+List of Content
+
+	1. Configuration Instructions
+	2. Installation Instructions
+	3. Operating Instructions
+	4. List of files
+	5. Copyright / Copyleft
+	6. Contact Information
+	7. Credits and Acknowledgements
+
+1. Configuration Instrctions
+	Linux
+	SD card
+	Raspberry Pi
+	USB sound card
+	Mic or recording devices
+	headphone or earphone
+
+2. Installation Instruction
+	Prepare SD card with NOOB downloading from the Internet inside
+	In term of Raspberry pi, run "sudo raspo - config" command to
