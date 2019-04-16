@@ -27,6 +27,7 @@ int main(int argc, char **argv){
 		}
 		printf("Duration of sound: ");
 		scanf("%f", &duration);
+		testTone(ch, fL, fR, duration );
 		return 0;
 	}
 	FILE *f;
