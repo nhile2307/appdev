@@ -23,5 +23,69 @@ List of Content
 	headphone or earphone
 
 2. Installation Instruction
-	Prepare SD card with NOOB downloading from the Internet inside
-	In term of Raspberry pi, run "sudo raspo - config" command to
+	1.Prepare SD card with NOOB downloading inside.
+	2.Set up Raspberry pi, remember to activate SSH Interface. 
+	Then reboot, get the IP address by editing rc.local file.
+	Connect and set up  USB Sound Card in the raspberry pi.
+	3.Instal libcurl “sudo apt-get update” , “sudo apt-get install libcurl3”, 
+	  “sudo apt-get install libcurl4-openssl-dev”
+	4.Set up to put files in git hub
+		4.1  Create a respository on Github with "your respository name".
+		4.2  Go to your directory that you want to remote to Github on Linux.
+		4.3  Use command "echo "# your respository name" >> README.md".
+		4.4  Use command "git init".
+		4.5  git add README.md
+		4.6  git commit -m "first commit"
+		4.7  git remote add origin https://github.com/your username/your respository name.git
+		4.8  git push -u origin master
+	5. Add file to your github
+		5.1  git status
+		5.2  git add (now you enter the file that you want to add, Example: README)
+		5.3  git commit -m "Add commit in here"
+		5.4  git push -u origin master
+
+3. Operating Instructions
+	Enter putty and put IP address from your own mail
+	Connect microphone and headphone to Raspberry pi
+	
+	1. Display the frequency and count peaks.
+		Run "make" to compile the application
+		Run the application by command "./sound.out"
+		Make some noise aroung the Microphone and see.
+	2. Generate the sound which we had done above
+		Run "make" again.
+		Run "./sound.out arg"
+		Choose channel you want (1 for Mono, 2 for stereo)
+		Choose time range from 1 to 10
+		Run "scp testTone.wav user@example.com:."
+		You wil be able to check testTone file in your direction
+
+ 
+4. List of files
+	comm.h	The header file for sound.c		  
+	comm.c	Communicate between Raspberry Pi and the server  
+	main.c	The operating file
+	makefile	Include ways to compile methods
+	screen.c	File for displaying value into the bar chart
+	screen.h	Header file of screen.c
+	sound.c		File for calculating and analysing sound recorded
+	sound.h		Header file of sound.c
+	sound.php	File to receive the RMS values
+	testcurl.c	For testing libcurl
+
+	
+5. Copyright / Copyleft
+	Sources code are free for downloading and distributing
+
+6. Contact Information
+	Le Phuong Hanh Nhi
+	Vaasa University of Applied Sciences
+	Woffintie 30, 65100, Vaasa, Finland
+	email: hanhnhile104@gmail.com
+
+7. Credits and Acknowledgements
+	This application is written by Nhi Le, with instruction of Gao Chao
+	from VAMK.
+	Language used: C, PHP
+	
+
